@@ -1093,7 +1093,7 @@ h3 {
 }
 
 /* line 22, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .title_text {
+.slider_area .title_text, .hero-banner .title_text {
   position: relative;
   margin-bottom: 213px;
   z-index: 3;
@@ -1122,14 +1122,15 @@ h3 {
 }
 
 /* line 36, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .title_text.title_text2 {
+.slider_area .title_text.title_text2, .hero-banner .title_text.title_text2 {
   margin-bottom: 60px;
   padding: 55px 8px 25px 0px;
+  text-align: left;
 }
 
 @media (max-width: 767px) {
   /* line 36, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .title_text.title_text2 {
+  .slider_area .title_text.title_text2, .hero-banner .title_text.title_text2 {
     margin-bottom: 0;
     padding: 0;
   }
@@ -1141,9 +1142,9 @@ h3 {
 }
 
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .title_text.title_text2:after {
+.slider_area .title_text.title_text2:after, .hero-banner .title_text.title_text2:after {
   position: absolute;
-  background-image: url(../img/banner/path2.png);
+  background-image: url(../img/path2.png);
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
@@ -1189,7 +1190,7 @@ h3 {
   background-image: url(../img/path.png);
   content: "";
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   z-index: -1;
   left: -14.5%;
   width: 120%;
@@ -1227,7 +1228,7 @@ h3 {
 }
 
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .title_text h3 {
+.slider_area .title_text h3, .hero-banner .title_text h3 {
   font-size: 90px;
   font-weight: 700;
   text-transform: capitalize;
@@ -1238,7 +1239,7 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .title_text h3 {
+  .slider_area .title_text h3, .hero-banner .title_text h3 {
     font-size: 36px;
     line-height: 43px;
     margin-bottom: 30px;
@@ -1247,7 +1248,7 @@ h3 {
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .title_text h3 {
+  .slider_area .title_text h3, .hero-banner .title_text h3 {
     font-size: 46px;
     line-height: 55px;
     margin-bottom: 30px;
@@ -1256,7 +1257,7 @@ h3 {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .title_text h3 {
+  .slider_area .title_text h3, .hero-banner .title_text h3 {
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 20px;
@@ -1264,7 +1265,7 @@ h3 {
 }
 
 /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .single_date {
+.slider_area .single_date, .hero-banner .single_date {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
@@ -1272,29 +1273,29 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .single_date {
+  .slider_area .single_date, .hero-banner .single_date {
     margin-bottom: 15px;
   }
 }
 
 /* line 128, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .single_date i {
+.slider_area .single_date i, .hero-banner .single_date i {
   padding-right: 10px;
 }
 
 /* line 135, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countDOwn_area {
+.slider_area .countDOwn_area, .hero-banner .countDOwn_area {
   padding-top: 60px;
 }
 
 /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time {
+.slider_area .countdown_time, .hero-banner .countdown_time {
   text-align: right;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .countdown_time {
+  .slider_area .countdown_time, .hero-banner .countdown_time {
     margin-top: 40px;
     text-align: left;
   }
@@ -1302,20 +1303,20 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .countdown_time {
+  .slider_area .countdown_time, .hero-banner .countdown_time {
     text-align: left;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .countdown_time {
+  .slider_area .countdown_time, .hero-banner .countdown_time {
     text-align: left;
   }
 }
 
 /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time .single_countdown {
+.slider_area .countdown_time .single_countdown, .hero-banner .countdown_time .single_countdown {
   display: inline-block;
   text-align: right;
   margin-right: 20px;
@@ -1323,7 +1324,7 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .countdown_time .single_countdown {
+  .slider_area .countdown_time .single_countdown, .hero-banner .countdown_time .single_countdown {
     margin-right: 10px;
     margin-top: 20px;
   }
@@ -1331,14 +1332,14 @@ h3 {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .countdown_time .single_countdown {
+  .slider_area .countdown_time .single_countdown, .hero-banner .countdown_time .single_countdown {
     margin-right: 10px;
     margin-top: 20px;
   }
 }
 
 /* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time .single_countdown h3 {
+.slider_area .countdown_time .single_countdown h3, .hero-banner .countdown_time .single_countdown h3 {
   color: #fff;
   font-size: 46px;
   font-weight: 600;
@@ -1346,13 +1347,13 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .countdown_time .single_countdown h3 {
+  .slider_area .countdown_time .single_countdown h3, .hero-banner .countdown_time .single_countdown h3 {
     font-size: 20px;
   }
 }
 
 /* line 170, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time .single_countdown span {
+.slider_area .countdown_time .single_countdown span, .hero-banner .countdown_time .single_countdown span {
   font-size: 16px;
   color: #fff;
   text-transform: capitalize;
@@ -5078,7 +5079,7 @@ h6 {
 }
 
 /* line 1087, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.single-post-area .quote-wrapper {
+.single-post-area .quote-wrapper, .blog_left_sidebar .single-blog blockquote {
   background: rgba(130, 139, 178, 0.1);
   padding: 15px;
   line-height: 1.733;
@@ -5090,13 +5091,13 @@ h6 {
 
 @media (min-width: 768px) {
   /* line 1087, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-  .single-post-area .quote-wrapper {
+  .single-post-area .quote-wrapper, .blog_left_sidebar .single-blog blockquote {
     padding: 30px;
   }
 }
 
 /* line 1101, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.single-post-area .quotes {
+.single-post-area .quotes, .blog_left_sidebar .single-blog blockquote p {
   background: #fff;
   padding: 15px 15px 15px 20px;
   border-left: 2px solid;
@@ -5104,7 +5105,7 @@ h6 {
 
 @media (min-width: 768px) {
   /* line 1101, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-  .single-post-area .quotes {
+  .single-post-area .quotes, .blog_left_sidebar .single-blog blockquote p {
     padding: 25px 25px 25px 30px;
   }
 }

@@ -16,3 +16,14 @@
 			</div>
 		</div>
 	</div>
+	<?php 
+		$wemeet_target_date = date('Y-m-d');
+		$event_date_option = wemeet_opt('wemeet_header_event_date') ? wemeet_opt('wemeet_header_event_date') : date( 'Y-m-d', strtotime($wemeet_target_date. '+90 day') );
+		?>
+		<script>
+			var eventTime = document.getElementById('clock');
+			console.log('event time', eventTime);
+			eventTime.setAttribute('data-event-date', '<?php echo $event_date_option?>');
+		</script>
+		<?php
+    ?>

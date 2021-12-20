@@ -125,7 +125,7 @@ final class Wemeet {
 
 		// support custom header
 		add_theme_support( 'custom-header', array(
-			'default-image'      => get_template_directory_uri() . '/assets/img/breadcrumb.jpg',
+			'default-image'      => get_template_directory_uri() . '/assets/img/breadcrumb.png',
 			'width'              => 1920,
 			'height'             => 912,
 			'flex-width'         => true,

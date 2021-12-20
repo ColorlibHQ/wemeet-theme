@@ -39,14 +39,14 @@ $sections = array(
     /**
      * General Section
      */
-    array(
-        'id'   => 'wemeet_general_section',
-        'args' => array(
-            'title'    => esc_html__( 'General', 'wemeet' ),
-            'panel'    => 'wemeet_theme_options_panel',
-            'priority' => 1,
-        ),
-    ),
+    // array(
+    //     'id'   => 'wemeet_general_section',
+    //     'args' => array(
+    //         'title'    => esc_html__( 'General', 'wemeet' ),
+    //         'panel'    => 'wemeet_theme_options_panel',
+    //         'priority' => 1,
+    //     ),
+    // ),
 
     /**
      * Social Profiles Section

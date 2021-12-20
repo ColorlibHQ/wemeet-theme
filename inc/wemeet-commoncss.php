@@ -20,8 +20,8 @@ function wemeet_common_custom_css(){
 		$whiteColor     		  	= '#ffffff';
 		$themeColor     		  	= wemeet_opt( 'wemeet_theme_color' ) != '#131313' ? wemeet_opt( 'wemeet_theme_color' ) : '';
 		$themeSecColor     		  	= '';
-		$bookBtnColor       		= wemeet_opt( 'wemeet_book_btn_color' ) != '#131313' ? wemeet_opt('wemeet_book_btn_color') : '';
-		$bookBtnHoverBgColor     	= wemeet_opt( 'wemeet_book_btn_hvr_bg_color' ) != '#131313' ? wemeet_opt('wemeet_book_btn_hvr_bg_color') : $themeColor;
+		$bookBtnColor       		= wemeet_opt( 'wemeet_book_btn_color' ) != '#ffffff' ? wemeet_opt('wemeet_book_btn_color') : '';
+		$bookBtnHoverBgColor     	= wemeet_opt( 'wemeet_book_btn_hvr_bg_color' ) != '#000000' ? wemeet_opt('wemeet_book_btn_hvr_bg_color') : '';
 		$hoverColor     	  	  = wemeet_opt( 'wemeet_quote_btn_hvr_text_color');
 
 		$headerTop_bg     		  = '';
@@ -37,10 +37,10 @@ function wemeet_common_custom_css(){
 		$dropMenuColor            = wemeet_opt( 'wemeet_dropdown_menu_color' ) != '#131313' ? wemeet_opt('wemeet_dropdown_menu_color') : '';
 		$dropMenuHovColor         = wemeet_opt( 'wemeet_dropdown_menu_hover_color' ) != '#808080' ? wemeet_opt('wemeet_dropdown_menu_hover_color') : $themeColor;
 
-		$footerwbgColor     	  = wemeet_opt( 'wemeet_footer_widget_bg_color' );
+		$footerwbgColor     	  = wemeet_opt( 'wemeet_footer_widget_bg_color' ) != '#1f1b1b' ? wemeet_opt( 'wemeet_footer_widget_bg_color' ) : '';
 		$footerwHeadColor   	  = wemeet_opt('wemeet_footer_widget_heading_color');
-		$footerwTextColor   	  = wemeet_opt('wemeet_footer_widget_text_color');
-		$footerwanchorcolor 	  = wemeet_opt('wemeet_footer_widget_anchor_color') != '#ffffff' ? wemeet_opt('wemeet_footer_widget_anchor_color') : '';
+		$footerwTextColor   	  = wemeet_opt('wemeet_footer_widget_text_color') != '#a3a3a3' ? wemeet_opt( 'wemeet_footer_widget_text_color' ) : '';
+		$footerwanchorcolor 	  = wemeet_opt('wemeet_footer_widget_anchor_color') != '#9e9e9e' ? wemeet_opt('wemeet_footer_widget_anchor_color') : '';
 		$footerwanchorhovcolor    = wemeet_opt('wemeet_footer_widget_anchor_hover_color') != '#ffffff' ? wemeet_opt('wemeet_footer_widget_anchor_hover_color') : '';
 		
 		$fofbg					  = wemeet_opt('wemeet_fof_bg_color');
@@ -289,15 +289,16 @@ function wemeet_common_custom_css(){
 				color: {$whiteColor} !important;
 			}
 
-			.header-area .get_in_tauch a
+			.header-area .get_in_tauch a, .header-area .buy_ticket a
 			{
-				color: {$bookBtnColor};
+				color: {$bookBtnColor} !important;
 				border-color: {$bookBtnColor};
 			}
-			.header-area .get_in_tauch a:hover
+			.header-area .get_in_tauch a:hover, .header-area .buy_ticket a:hover
 			{
-				border-color: {$bookBtnHoverBgColor};
-				background: {$bookBtnHoverBgColor};
+				border-color: {$bookBtnColor};
+				color: {$bookBtnHoverBgColor} !important;
+				background: {$bookBtnColor};
 			}
 			.header-area .main-header-area.sticky .boxed_btn_white
 			{
